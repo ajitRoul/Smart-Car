@@ -15,19 +15,23 @@ First download Arduino IDE, Download sketch file and compile. If it gives error 
 Tools>Board> Generic ESP8266 Module. Programmer> depend what type you are using. For me AVRISP.
 
 Connect ESP8266 as per the below description.No extra setup required. I am using GPIO0 and GPIO2 as output to control Car remote.
-
-VCC->3.5V.
-CH_PD: Chip enable. Keep it on high (3.3V) for normal operation.
-RST: Reset. Keep it on high (3.3V) for normal operation
-GND->GND.
-RX->RX Arduino
-TX-> TX Arduino
-Normal Mode(Running Mode)
-GPIO0 and GPIO2 ->high
-programming Mode
-GPIO0 ->GND
-GPIO2 ->high
-
+<ul>
+  <li>VCC->3.5V.</li>
+  <li>CH_PD: Chip enable. Keep it on high (3.3V) for normal operation.</li>
+  <li>RST: Reset. Keep it on high (3.3V) for normal operation</li>
+  <li>GND->GND.</li>
+  <li>RX->RX Arduino</li>
+  <li>TX-> TX Arduino</li>
+  <li>
+    #####Normal Mode(Running Mode)
+    GPIO0 and GPIO2 ->high
+  </li>
+  <li>
+    ##### programming Mode
+    GPIO0 ->GND
+    GPIO2 ->high
+  </li>
+</ul>
 ## Hosting Firebase server
 <ul>
   <li>Create project at https://console.firebase.google.com/.</li>
@@ -60,8 +64,6 @@ if you are getting errors like
 #### esp_com open failed error: Failed to open COM33 ,error: espcomm_open failed, error: espcomm_upload_mem failed
 check programming mode connection is correctly done or not.
 Once you have programmed Esp, blue led(if its available) will blink and you are done with ESP programming.
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 Power up your all mlodule, open android application. click button and watch output of GPIO0 and GPIO2 in Arduino Monitor. I have skipped wiring of Car remote, because its upto you what appliance you want to feed it.
