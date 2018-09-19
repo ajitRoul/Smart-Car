@@ -23,15 +23,16 @@ Connect ESP8266 as per the below description.No extra setup required. I am using
   <li>RX->RX Arduino</li>
   <li>TX-> TX Arduino</li>
   <li>
-    #####Normal Mode(Running Mode)
+  Normal Mode(Running Mode)
     GPIO0 and GPIO2 ->high
   </li>
   <li>
-    ##### programming Mode
+programming Mode
     GPIO0 ->GND
     GPIO2 ->high
   </li>
 </ul>
+
 ## Hosting Firebase server
 <ul>
   <li>Create project at https://console.firebase.google.com/.</li>
