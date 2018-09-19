@@ -1,3 +1,14 @@
 page-home {
-
+    .ion-button-cls{
+        width: 15vh !important;
+        height: 15vh !important;
+        border-radius: 50% !important;
+    }
+    .conteiner{
+        margin-top: 25vh;
+    }
+    ion-col{
+        text-align: center;
+    }
 }
+

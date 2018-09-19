@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Smart Car
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-grid class="conteiner">
+    <ion-row>
+      <ion-col col-6 >
+        <button ion-button class="forward ion-button-cls" (click)="carControl('forward')" >Forward</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button color="secondary" class="back ion-button-cls" (click)="carControl('back')">Back</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+          <button ion-button color="danger" class="stop ion-button-cls" (click)="carControl('stop')">Stop</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
